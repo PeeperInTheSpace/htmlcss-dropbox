@@ -1,5 +1,109 @@
+/* GENERAL SETTINGS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    height: 8vh;
+    width: 100%;
+    box-shadow: 0px -3px 16px -4px #000000;
+    font-weight: 300;
+    background-color: white;
+}
+
+header div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.logo {
+    width: 125px;
+    height: 25px;
+}
+
+header div a {
+    color: black;
+}
+
+.start {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #0061ff;
+    width: fit-content;
+}
+
+/* MAIN SECTION */
+
+main {
+    display: flex;
+}
+
+    /* BLUE SECTION  */
+
+    .mainsection {
+        display: flex;
+        background-color: #b4d0e7;
+        height: 70vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ms-container1 {
+        margin-top: 15vh;
+        width: 50%;
+        position: relative;
+    }
+
+    .ms-container1 h1 {
+        font-weight: 800;
+        color: black;
+        font-size: 60px;
+    }
+
+    .ms-subcontainer1 {
+        display: flex;
+        flex-direction: column;
+        width: 38%;
+    }
+
+    .ms-subcontainer1 p {
+        margin-top: 25px;
+    }
+
+    .ms-subcontainer1 i {
+        margin-top: 35px;
+    }
+
+    .start2 {
+        border: none;
+        padding: 10px;
+        color: white;
+        background-color: #0061ff;
+        width: fit-content;
+        margin-top: 25px;
+    }
+
+    .msjumbo {
+        width: 75%;
+        position: absolute;
+        left: 38%;
+        top: 35%;
+    }
+
