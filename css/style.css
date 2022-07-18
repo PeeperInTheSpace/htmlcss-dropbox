@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* HEADER SECTION */
 
 header {
@@ -51,43 +55,39 @@ header div a {
 
 /* MAIN SECTION */
 
-main {
-    display: flex;
-}
-
     /* BLUE SECTION  */
 
-    .mainsection {
+    .bluesection {
         display: flex;
         background-color: #b4d0e7;
-        height: 70vh;
+        height: 80vh;
         width: 100%;
         justify-content: center;
     }
 
-    .ms-container1 {
+    .bs-container1 {
         margin-top: 15vh;
         width: 50%;
         position: relative;
     }
 
-    .ms-container1 h1 {
+    .bs-container1 h1 {
         font-weight: 800;
         color: black;
-        font-size: 60px;
+        font-size: 65px;
     }
 
-    .ms-subcontainer1 {
+    .bs-subcontainer1 {
         display: flex;
         flex-direction: column;
         width: 38%;
     }
 
-    .ms-subcontainer1 p {
-        margin-top: 25px;
+    .bs-subcontainer1 p {
+        margin-top: 45px;
     }
 
-    .ms-subcontainer1 i {
+    .bs-subcontainer1 i {
         margin-top: 35px;
     }
 
@@ -97,13 +97,74 @@ main {
         color: white;
         background-color: #0061ff;
         width: fit-content;
-        margin-top: 25px;
+        margin-top: 35px;
     }
 
-    .msjumbo {
-        width: 75%;
+    .bsjumbo {
+        width: 90%;
         position: absolute;
-        left: 38%;
+        left: 40%;
         top: 35%;
     }
 
+    /* BUSINESS PLANS SECTION */
+
+    .planssection {
+        display: flex;
+        height: 70vh;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15vh;
+        color: black;
+    }
+
+    .ps-container1 h2 {
+        font-size: 40px;
+        margin-bottom: 5vh;
+    }
+
+    .ps-container1 label {
+        margin-right: 40px;
+    }
+
+        /* PLANS COLUMNS */
+
+        .ps-container2 {
+            display: flex;
+        }
+
+        .titlebox {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ps-subcontainer1,.ps-subcontainer2,.ps-subcontainer3 {
+            height: 10vh;
+            width: calc(100% / 3);
+            border: 2px solid #d1d1d4;
+            margin-right: 15px;
+            margin-top: 40px;
+        }
+
+        .titlebox {
+            display: flex;
+            align-items: baseline;
+            border-bottom: 2px solid #d1d1d4;
+            padding: 5px;
+        }
+
+        .titlebox i {
+            padding-right: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .plandetail {
+            padding: 10px;
+        }
+
+        .plandetail h3 {
+            font-size: 10px;
+        }
