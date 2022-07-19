@@ -141,23 +141,18 @@ main {
         .ps-columns {
             display: flex;
             justify-content: center;
-            margin-left: 9vh;
+        }
+        
+        .ps-colbox {
+            border: 2px solid #d1d1d4;
+            margin-right: 40px;
+            margin-top: 40px;
+            width: 16%;
         }
 
         .titlebox {
             display: flex;
             justify-content: center;
-        }
-
-        .ps-colbox1,.ps-colbox2,.ps-colbox3 {
-            height: 70vh;
-            width: calc(90% / 5);
-            border: 2px solid #d1d1d4;
-            margin-right: 40px;
-            margin-top: 40px;
-        }
-
-        .titlebox {
             display: flex;
             align-items: baseline;
             border-bottom: 2px solid #d1d1d4;
@@ -168,10 +163,26 @@ main {
             padding-right: 5px;
         }
 
+        .ps-colbox-sub {
+            padding: 25px;
+        }
+
+        .plandetail {
+            font-weight: 300;
+        }
+
+        .plandetail div {
+            margin-bottom: 10px;
+        }
+
+        .planprice h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
         .price {
             font-weight: bold;
             margin-bottom: 10px;
-
         }
 
         .pricedetail {
@@ -180,19 +191,85 @@ main {
             margin-bottom: 50px;
         }
 
-        .plandetail {
+        .flexlogo {
+            display: flex;
+        }
+
+        .flexlogo div i {
+            padding-right: 5px;
+        }
+
+        .trial {
+            border: none;
+            padding: 10px;
+            color: white;
+            background-color: #0061ff;
+            width: 27vh;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .buynow {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .buylink {
+            margin-bottom: 40px;
+        }
+
+        .minihr {
+            width: 30px;
+            margin-bottom: 40px;
+        }
+
+        .bluecheck {
+            display: flex;
+        }
+
+        .bluecheck i {
+            color: #0061ff;
+            padding-right: 5px;
+        }
+
+        .mainfeatures {
+            margin-bottom: 20px;
+        }
+
+        /* ROW */
+
+        .ps-row {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .ps-rowbox {
+            border: 2px solid #d1d1d4;
+            margin-top: 40px;
+            margin-right: 2%;
+            width: 52.2%;
+        }
+
+        .ps-rowbox-sub {
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact {
+            border: none;
+            padding: 10px;
+            color: white;
+            background-color: #0061ff;
+            width: 27vh;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .teamdescription {
+            font-weight: 300;
             padding: 30px;
+            width: 80%;
         }
 
-        .plandetail h3 {
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-
-        .plandetail span {
-            margin-bottom: 10px;
-        }
-
-        .plandetail i {
-            margin-right: 5px;
-        }
