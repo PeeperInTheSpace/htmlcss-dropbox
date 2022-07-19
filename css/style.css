@@ -280,6 +280,7 @@ main {
         justify-content: center;
         margin-top: 10vh;
         margin-bottom: 10vh;
+        margin-right: 15vh;
     }
 
     .partnerimg {
@@ -314,5 +315,71 @@ main {
         color: black;
         background-color: #0062ff00;
         width: 15vh;
+        font-weight: 300;
+    }
+
+    /* DROPBOX FUNCTIONS SECTION  */
+
+    .flextitle {
+        display: flex;
+        justify-content: center;
+        margin-right: 56vh;
+    }
+
+        /* CARDS */
+
+        .cardscontainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 5vh 47vh;
+            margin-bottom: 10vh;
+        }
+
+        .cardbox {
+            width: calc(100% / 4);
+            margin-right: 9vh;
+            margin-bottom: 3vh;
+        }
+
+        .cardbox div {
+            line-height: 2.5vh;
+        }
+
+        .cardimg {
+            width: fit-content;
+        }
+
+        .cardimg img{
+            width: 35vh;
+        }
+
+        .carddescription {
+            width: 35vh;
+        }
+
+        .carddescription h3 {
+            margin-bottom: 2vh;
+            line-height: 3vh;
+        }
+
+    /* DROPBOX CLIENTS */
+
+    .clientsflextitle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .clientsflextitle h2,a {
+        display: inline-block;
+    }
+
+    .discoverteams {
+        display: block;
+        color: blue;
+        text-decoration: underline;
         font-weight: 300;
     }
