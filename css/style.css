@@ -373,12 +373,7 @@ main {
         height: 20vh;
     }
 
-    .clientsflextitle h2,a {
-        display: inline-block;
-    }
-
     .discoverteams {
-        display: block;
         color: blue;
         text-decoration: underline;
         font-weight: 300;
