@@ -273,3 +273,46 @@ main {
             width: 80%;
         }
 
+    /* FIND A PARTNER SECTION */
+
+    .partnercontainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .partnerimg {
+        margin-right: 5vh;
+    }
+
+    .partnerimg img {
+        width: 60vh;
+    }
+
+    .partnerdescription {
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        margin-bottom: 3vh;
+        width: 31vh;
+        line-height: 2.5vh;
+    }
+
+    .partnerdescription div h3 {
+        margin-bottom: 2vh;
+        margin-top: 7vh;
+    }
+
+    .partnerdescription div p {
+        margin-bottom: 2vh;
+    }
+
+    .findpartner {
+        border: 2px solid black ;
+        padding: 10px;
+        color: black;
+        background-color: #0062ff00;
+        width: 15vh;
+        font-weight: 300;
+    }
