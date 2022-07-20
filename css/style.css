@@ -37,8 +37,8 @@ header div {
 }
 
 .logo {
-    width: 125px;
-    height: 25px;
+    width: 8rem;
+    height: 1.5rem;
 }
 
 header div a {
@@ -47,7 +47,7 @@ header div a {
 
 .start {
     border: none;
-    padding: 10px;
+    padding: 1rem;
     color: white;
     background-color: #0061ff;
     width: fit-content;
@@ -55,85 +55,93 @@ header div a {
 
 /* MAIN SECTION */
 
-main {
-    width: 100%;
-}
-
     /* BLUE SECTION  */
 
     .bluesection {
-        display: flex;
-        background-color: #b4d0e7;
-        height: 80vh;
-        width: 100%;
-        justify-content: center;
+        background-color: rgb(180, 208, 231);
+        height: 73vh;
+        padding-top: 15vh;
+        margin: 0 auto;
     }
 
     .bs-container1 {
-        margin-top: 15vh;
-        width: 50%;
-        position: relative;
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
+    .bs-container2 {
+        display: flex;
     }
 
     .bs-container1 h1 {
         font-weight: 800;
         color: black;
-        font-size: 65px;
+        font-size: 4.5rem;
     }
 
-    .bs-subcontainer1 {
-        display: flex;
-        flex-direction: column;
-        width: 38%;
+    .bs-subcontainer {
+        width: 50%;
     }
 
-    .bs-subcontainer1 p {
-        margin-top: 45px;
+    .bs-subcontainer p {
+        margin-top: 3rem;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 
-    .bs-subcontainer1 i {
-        margin-top: 70px;
+    .bs-subcontainer span {
+        margin-top: 2rem;
+    }
+
+    .bs-subcontainer i {
+        margin-top: 3rem;
     }
 
     .start2 {
         border: none;
-        padding: 10px;
+        padding: 1rem;
         color: white;
         background-color: #0061ff;
         width: fit-content;
-        margin-top: 35px;
+        margin-top: 2rem;
     }
 
-    .bsjumbo {
-        width: 90%;
-        position: absolute;
-        left: 40%;
-        top: 35%;
+    .bs-jumbo {
+        width: 70%;
+    }
+
+    .bs-jumbo img {
+        position: relative;
+        width: 130%;
+        left: -20px;
+        top: 50px;
     }
 
     /* BUSINESS PLANS SECTION */
 
     .planssection {
-        display: flex;
-        height: 15vh;
-        width: 100%;
-        justify-content: center;
-        margin-top: 15vh;
-        margin-left: -18vh;
+        padding-top: 15vh;
         color: black;
     }
 
     #fmensile, #fannuale {
-        margin-right: 5px;
+        margin-right: 0.5rem;
     }
 
+    .ps-container1 {
+        max-width: 55%;
+        margin: 0 auto;;
+    }
+    
+
     .ps-container1 h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-bottom: 5vh;
     }
 
     .ps-container1 label {
-        margin-right: 40px;
+        margin-right: 4rem;
     }
 
         /* PLANS COLUMNS */
@@ -145,8 +153,8 @@ main {
         
         .ps-colbox {
             border: 2px solid #d1d1d4;
-            margin-right: 40px;
-            margin-top: 40px;
+            margin-right: 4rem;
+            margin-top: 4rem;
             width: 16%;
         }
 
@@ -156,15 +164,15 @@ main {
             display: flex;
             align-items: baseline;
             border-bottom: 2px solid #d1d1d4;
-            padding: 5px;
+            padding: 0.5rem;
         }
 
         .titlebox i {
-            padding-right: 5px;
+            padding-right: 0.5rem;
         }
 
         .ps-colbox-sub {
-            padding: 25px;
+            padding: 2.5rem;
         }
 
         .plandetail {
@@ -172,23 +180,23 @@ main {
         }
 
         .plandetail div {
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         .planprice h3 {
-            font-size: 25px;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .price {
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         .pricedetail {
             color: #a2a4a5;
             font-weight: 300;
-            margin-bottom: 50px;
+            margin-bottom: 5rem;
         }
 
         .flexlogo {
@@ -196,17 +204,17 @@ main {
         }
 
         .flexlogo div i {
-            padding-right: 5px;
+            padding-right: 0.5rem;
         }
 
         .trial {
             border: none;
-            padding: 10px;
+            padding: 1rem;
             color: white;
             background-color: #0061ff;
             width: 27vh;
-            margin-top: 35px;
-            margin-bottom: 35px;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
             font-weight: 300;
         }
 
@@ -216,12 +224,12 @@ main {
         }
 
         .buylink {
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
         }
 
         .minihr {
-            width: 30px;
-            margin-bottom: 40px;
+            width: 3rem;
+            margin-bottom: 4rem;
         }
 
         .bluecheck {
@@ -230,11 +238,11 @@ main {
 
         .bluecheck i {
             color: #0061ff;
-            padding-right: 5px;
+            padding-right: 0.5rem;
         }
 
         .mainfeatures {
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
 
         /* ROW */
@@ -246,30 +254,30 @@ main {
     
         .ps-rowbox {
             border: 2px solid #d1d1d4;
-            margin-top: 40px;
+            margin-top: 4rem;
             margin-right: 2%;
             width: 52.2%;
         }
 
         .ps-rowbox-sub {
-            padding: 25px;
+            padding: 2.5rem;
             display: flex;
             justify-content: space-between;
         }
 
         .contact {
             border: none;
-            padding: 10px;
+            padding: 1rem;
             color: white;
             background-color: #0061ff;
             width: 27vh;
-            margin-bottom: 35px;
+            margin-bottom: 3.5rem;
             font-weight: 300;
         }
 
         .teamdescription {
             font-weight: 300;
-            padding: 30px;
+            padding: 3rem;
             width: 80%;
         }
 
@@ -278,7 +286,7 @@ main {
     .partnercontainer {
         display: flex;
         justify-content: center;
-        margin-top: 10vh;
+        padding-top: 1000vh;
         margin-bottom: 10vh;
         margin-right: 15vh;
     }
@@ -311,7 +319,7 @@ main {
 
     .findpartner {
         border: 2px solid black ;
-        padding: 10px;
+        padding: 1rem;
         color: black;
         background-color: #0062ff00;
         width: 15vh;
