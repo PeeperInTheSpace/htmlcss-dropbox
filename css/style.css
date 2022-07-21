@@ -13,6 +13,13 @@ a {
 
 button {
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    filter:brightness(150%);
+    border-radius: 25px;
+    font-weight: bolder;
 }
 
 /* HEADER SECTION */
@@ -43,6 +50,12 @@ header div {
 
 header div a {
     color: black;
+    transition: all 0.5s;
+}
+
+header div a:hover {
+    font-weight: bolder;
+    box-shadow: 0 0 25px rgba(2, 2, 2, 0.671);
 }
 
 .start {
@@ -59,7 +72,7 @@ header div a {
 
     .bluesection {
         background-color: rgb(180, 208, 231);
-        height: 73vh;
+        height: 81vh;
         padding-top: 15vh;
         margin: 0 auto;
     }
@@ -96,6 +109,11 @@ header div a {
 
     .bs-subcontainer i {
         margin-top: 3rem;
+        transition: 1s;
+    }
+
+    .bs-subcontainer i:hover {
+        transform: scale(2) translateY(4rem);
     }
 
     .start2 {
@@ -129,18 +147,18 @@ header div a {
         margin-right: 0.5rem;
     }
 
-    .ps-container1 {
+    .ps-container {
         max-width: 55%;
         margin: 0 auto;;
     }
     
 
-    .ps-container1 h2 {
+    .ps-container h2 {
         font-size: 2.5rem;
         margin-bottom: 5vh;
     }
 
-    .ps-container1 label {
+    .ps-container label {
         margin-right: 4rem;
     }
 
@@ -148,20 +166,20 @@ header div a {
 
         .ps-columns {
             display: flex;
-            justify-content: center;
         }
         
         .ps-colbox {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 3);
+            margin: 35px;
+            margin-left: 0;
             border: 2px solid #d1d1d4;
-            margin-right: 4rem;
-            margin-top: 4rem;
-            width: 16%;
         }
 
         .titlebox {
             display: flex;
             justify-content: center;
-            display: flex;
             align-items: baseline;
             border-bottom: 2px solid #d1d1d4;
             padding: 0.5rem;
@@ -248,18 +266,11 @@ header div a {
         /* ROW */
 
         .ps-row {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .ps-rowbox {
             border: 2px solid #d1d1d4;
-            margin-top: 4rem;
-            margin-right: 2%;
-            width: 52.2%;
+            width: 67.2rem;
         }
 
-        .ps-rowbox-sub {
+        .ps-rowbox {
             padding: 2.5rem;
             display: flex;
             justify-content: space-between;
@@ -283,12 +294,14 @@ header div a {
 
     /* FIND A PARTNER SECTION */
 
+    .partnersection {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 15vh;
+    }
+
     .partnercontainer {
         display: flex;
-        justify-content: center;
-        padding-top: 1000vh;
-        margin-bottom: 10vh;
-        margin-right: 15vh;
     }
 
     .partnerimg {
@@ -326,12 +339,17 @@ header div a {
         font-weight: 300;
     }
 
-    /* DROPBOX FUNCTIONS SECTION  */
+    /* FUNCTIONS SECTION  */
 
-    .flextitle {
-        display: flex;
-        justify-content: center;
-        margin-right: 56vh;
+    .functionssection {
+        padding-top: 15vh;
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .functionstitle h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
     }
 
         /* CARDS */
@@ -341,18 +359,17 @@ header div a {
             justify-content: center;
             flex-wrap: wrap;
             width: 100%;
-            padding: 5vh 47vh;
-            margin-bottom: 10vh;
         }
 
         .cardbox {
-            width: calc(100% / 4);
-            margin-right: 9vh;
-            margin-bottom: 3vh;
+            width: calc(100% / 3 - 40px);
+            margin: 40px;
+            margin-left: 0;
         }
 
         .cardbox div {
             line-height: 2.5vh;
+            padding: 5px;
         }
 
         .cardimg {
@@ -372,13 +389,21 @@ header div a {
             line-height: 3vh;
         }
 
-    /* DROPBOX CLIENTS */
+    /* CLIENTS SECTION HEAD */
 
-    .clientsflextitle {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 20vh;
+    .clientssectionhead {
+        padding-top: 15vh;
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .clientstitle {
+        width: 40rem;
+    }
+
+    .clientstitle h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
     }
 
     .discoverteams {
@@ -386,3 +411,148 @@ header div a {
         text-decoration: underline;
         font-weight: 300;
     }
+
+        /* CLIENTS SECTION MAIN */
+
+        .clientssectionmain {
+            width: 100%;
+            padding-top: 15vh;
+        }
+
+        .clientsboxmaincontainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .clientsboxsub {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% / 3);
+        }
+
+        .clientsboxsub div p {
+            margin-bottom: 3rem;
+        }
+        
+        .middle {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .middle p {
+            margin-top: -2rem;
+        }
+
+        .clientbox {
+            display: flex;
+            justify-content: center;
+            width: 19.8rem;
+            height: 18rem;
+            transition: all 0.5s;
+        }
+
+        .clientbox:hover {
+                box-shadow: 0 0 45px rgb(249, 249, 252) inset;
+                color: rgba(255,255,255,1);
+                transform: scale(0.9);
+              }
+
+        .clientbox img {
+            width: 50%;
+            filter: invert(1);
+        }
+
+        .middle .clientbox img {
+            width: 90%;
+            filter: invert(0);
+        }
+
+        .one {
+            background-color: #a2d39b;
+        }
+
+        .two {
+            background-color: #61082b;
+        }
+
+        .three {
+            background-color: #0093ce;
+        }
+
+        .three img {
+            width: 15rem;
+            height: 4rem;
+            margin-top: 8rem;
+        }
+
+        .four {
+            background-color: #ff1c1c;
+        }
+
+        .middle {
+            background-color: #f5f5f5;
+            padding: 0 10rem 0rem 4rem;
+        }
+
+        #middle hr {
+            width: 10rem;
+            margin-top: 2rem;
+        }
+
+        #middle {
+            display: inline-block;
+            padding-top: 5rem;
+        }
+
+        .six {
+            background-color: #d5001f;
+        }
+
+        .seven {
+            background-color: #b4d0e7;
+        }
+
+        .eight {
+            background-color: #0d2481;
+        }
+
+        .nine {
+            background-color: #ffd830;
+        }
+
+    /* CLIENTS SECTION FOOT */
+
+    .clientssectionfoot {
+        width: 100%;
+        background-color: #b4d0e7;
+        height: 20rem;
+    }
+
+    .clientssectionfootcontainer {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .clientsfoottitle {
+        width: 35rem;
+    }
+
+    .clientsfoottitle h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
+        color: #61082b;
+    }
+
+    #starttrial {
+        background-color: white;
+        color: black;
+    }
+
+    /* FAQ SECTION */
+
+    
